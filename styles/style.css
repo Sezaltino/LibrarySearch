@@ -1,0 +1,26 @@
+.book-card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.book-card h2 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.book-card p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.8;
+    text-shadow: 1px 1px 1px #000;
+}

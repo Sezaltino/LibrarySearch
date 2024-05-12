@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Livros</title>
+        <link rel="stylesheet" href="../styles/style.css"> <!-- Importe o arquivo CSS com o estilo dos cards -->
+    </head>
+    <body>
+        <div id="content"></div>
+
+        <div id="bookContainer" class="book-container">
+        <!-- Os cards de livros serão adicionados aqui dinamicamente -->
+        </div>
+
+    <script src="../dist/index.js"></script>
+    <script src="https://www.googleapis.com/books/v1/volumes?q=harry+potter&callback=handleResponse"></script>
+  </body>
+</html>
