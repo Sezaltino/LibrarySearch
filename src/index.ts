@@ -4,7 +4,7 @@ let book: Books[] = [];
 function handleResponse(response: { items: any[] }) {
     for (let i = 0; i < response.items.length; i++) {
         const item = response.items[i];
-        const authors = Array.isArray(item.volumeInfo.authors) ? item.volumeInfo.authors.join(', ') : 'Unknown'; // Verifica se os autores são uma matriz e os une em uma string separada por vírgulas, caso contrário, define como 'Unknown'
+        const authors = Array.isArray(item.volumeInfo.authors) ? item.volumeInfo.authors.join(', ') : 'Unknown';
         const newBook: Books = {
             Author: authors,
             AverageRating: item.volumeInfo.averageRating || 0,
